@@ -23,9 +23,10 @@ for (let c of canvases) {
 
 function addParticle(e) {
     const canvas = e.target;
+    const rect = canvas.getBoundingClientRect();
     const id = canvas.id;
-    const x = (e.x ?? e.touches[0].x) - canvas.offsetLeft;
-    const y = (e.y ?? e.touches[0].y) - canvas.offsetTop;
+    const x = (e.x ?? e.touches[0].x) - rect.x;
+    const y = (e.y ?? e.touches[0].y) - rect.y;
     const system = particleSystem[id];
     const p = new system.particle(x, y);
     const engine = system.engine;
