@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Gnat extends Particle {
 	constructor(x,y){
 		super(x,y);
@@ -37,3 +39,5 @@ class Gnat extends Particle {
 		return this.life > 0;
 	}
 }
+
+export default Gnat;

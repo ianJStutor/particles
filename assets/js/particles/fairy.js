@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Fairy extends Particle {
 	constructor(x, y){
 		super(x, y);
@@ -45,3 +47,5 @@ class Fairy extends Particle {
 		return --this.life >= 0;
 	}
 }
+
+export default Fairy;

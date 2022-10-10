@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Blob extends Particle {
 	constructor(x,y){
 		super(x,y);
@@ -69,3 +71,5 @@ class Blob extends Particle {
 		//https://github.com/stbaer/cardinal-spline/blob/master/index.js
 		var f;r="number"==typeof r?r:.5,t=t||25;var h,e,s,i,o,a,l=1,p=n.length,c=0,v=new Float32Array((p-2)*t+2+(u?2*t:0)),y=new Float32Array(4*(t+2)),g=4;for(f=n.slice(0),u?(f.unshift(n[p-1]),f.unshift(n[p-2]),f.push(n[0],n[1])):(f.unshift(n[1]),f.unshift(n[0]),f.push(n[p-2],n[p-1])),y[0]=1;l<t;l++)i=2*(s=(e=(h=l/t)*h)*h),o=3*e,y[g++]=i-o+1,y[g++]=o-i,y[g++]=s-2*e+h,y[g++]=s-e;return y[++g]=1,(a=function(n,u,f){for(var h,e,s,i,o,a,l,p,y,g,w,A,F,b,m=2;m<f;m+=2)for(e=n[m],s=n[m+1],i=n[m+2],o=n[m+3],a=(i-n[m-2])*r,l=(o-n[m-1])*r,p=(n[m+4]-e)*r,y=(n[m+5]-s)*r,h=0;h<t;h++)w=u[g=h<<2],A=u[g+1],F=u[g+2],b=u[g+3],v[c++]=w*e+A*i+F*a+b*p,v[c++]=w*s+A*o+F*l+b*y})(f,y,p),u&&((f=[]).push(n[p-4],n[p-3],n[p-2],n[p-1]),f.push(n[0],n[1],n[2],n[3]),a(f,y,4)),p=u?0:n.length-2,v[c++]=n[p],v[c]=n[p+1],v}
 }
+
+export default Blob;

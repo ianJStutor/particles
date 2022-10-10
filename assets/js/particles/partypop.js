@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class PartyPop extends Particle {
 
 	constructor(x, y){
@@ -34,3 +36,5 @@ class PartyPop extends Particle {
       	return this.a > 0;
     }
 }
+
+export default PartyPop;

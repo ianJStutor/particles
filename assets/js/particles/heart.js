@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Heart extends Particle {
 	constructor(x,y){
 		var xScatter = 10;
@@ -38,3 +40,5 @@ class Heart extends Particle {
 		return this.life > 0;
 	}
 }
+
+export default Heart;

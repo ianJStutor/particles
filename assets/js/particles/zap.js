@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Zap extends Particle {
 	constructor(x, y){
 		super(x, y);
@@ -38,4 +40,7 @@ class Zap extends Particle {
 	isAlive(canvas){
 		return this.life > 0;
 	}
+
 }
+
+export default Zap;

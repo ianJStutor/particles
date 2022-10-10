@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Sparkle extends Particle {
 
 	constructor(x, y){
@@ -37,3 +39,5 @@ class Sparkle extends Particle {
 	}
 
 }
+
+export default Sparkle;

@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Puck extends Particle {
 
 	constructor(x, y){
@@ -34,3 +36,5 @@ class Puck extends Particle {
 	}
 
 }
+
+export default Puck;

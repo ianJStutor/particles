@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Confetti extends Particle {
 	constructor(x, y){
 		var xScatter = 10,
@@ -27,3 +29,5 @@ class Confetti extends Particle {
 		return this.y + this.size < canvas.height;
 	}
 }
+
+export default Confetti;

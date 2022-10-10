@@ -1,3 +1,5 @@
+import Particle from "./Particle.js";
+
 class Puddle extends Particle {
 	constructor(x, y){
 		super(x, y);
@@ -25,3 +27,5 @@ class Puddle extends Particle {
 		return this.a > 0;
 	}
 }
+
+export default Puddle;

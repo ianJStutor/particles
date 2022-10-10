@@ -1,4 +1,6 @@
-class Drips extends Particle {
+import Particle from "./Particle.js";
+
+class Drip extends Particle {
 	constructor(x, y){
     	super(x, y);
       	this.originX = x;
@@ -52,3 +54,5 @@ class Drips extends Particle {
     	return --this.life >= 0;
     }
 }
+
+export default Drip;
