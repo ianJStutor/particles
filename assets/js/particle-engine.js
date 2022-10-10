@@ -55,3 +55,5 @@ class ParticleEngine {
 		else this.time = null;
     }
 }
+
+export default ParticleEngine;
