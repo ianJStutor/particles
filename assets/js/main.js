@@ -28,8 +28,12 @@ function addParticle(e) {
     const x = (e.x ?? e.touches[0].x) - rect.x;
     const y = (e.y ?? e.touches[0].y) - rect.y;
     const system = particleSystem[id];
-    const p = new system.particle(x, y);
-    const engine = system.engine;
-    engine.addParticle(p);
-    engine.startAnimation();
+    if (Math.random() < system.particle.spawnChance) {
+        const engine = system.engine;
+        for (let i=0; i<system.particle.spawnQuantity; i++) {
+            const p = new system.particle(x, y);
+            engine.addParticle(p);
+        }
+        engine.startAnimation();
+    }
 }

@@ -8,6 +8,9 @@ class Particle {
 	update(canvas){}
 	render(ctx){}
 	isAlive(canvas){ return true; }
+
+	static spawnQuantity = 1;
+	static spawnChance = 1;
 }
 
 export default Particle;
