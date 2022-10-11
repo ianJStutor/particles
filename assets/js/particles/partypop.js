@@ -4,11 +4,9 @@ class PartyPop extends Particle {
 
 	constructor(x, y){
 		super(x, y);
-      	this.radius = 2;
-      	this.a = 1;
-      	this.r = Math.floor(Math.random()*256);
-      	this.g = Math.floor(Math.random()*256);
-      	this.b = Math.floor(Math.random()*256);
+      	this.radius = 3;
+      	this.hue = Math.floor(Math.random() * 360);
+		this.a = 1;
       	let angle = Math.random() * Math.PI * 2;
       	let minSpeed = 4;
       	let maxSpeed = 10;
@@ -25,7 +23,7 @@ class PartyPop extends Particle {
 		this.deltaY += 0.5;
     }
 	render(ctx){
-      	ctx.fillStyle = `rgba(${this.r}, ${this.g}, ${this.b}, ${this.a})`
+      	ctx.fillStyle = `hsla(${this.hue}deg, 100%, 50%, ${this.a})`;
         ctx.beginPath();
       	ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
       	ctx.fill();

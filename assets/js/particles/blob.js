@@ -3,14 +3,14 @@ import Particle from "./Particle.js";
 class Blob extends Particle {
 	constructor(x,y){
 		super(x,y);
-		const numPoints = 7;
+		const numPoints = 5;
 		this.angle = Math.random() * Math.PI * 2;
 		const speed = 1;
 		this.vx = speed * Math.cos(this.angle);
 		this.vy = speed * Math.sin(this.angle);
 		const deltaAngle = Math.PI*2/numPoints;
-		const minRadius = 100;
-		const maxRadius = 150;
+		const minRadius = 20;
+		const maxRadius = 25;
 		this.points = [];
 		for (let i=0; i<numPoints; i++){
 			let radius = Math.random() * (maxRadius - minRadius) + minRadius;
@@ -19,15 +19,15 @@ class Blob extends Particle {
 				this.y + radius * Math.sin(i*deltaAngle+this.angle)
 			);
 		}
-		this.longestRadius = 100;
+		this.longestRadius = minRadius;
 		this.r = Math.floor(Math.random() * 56) + 200;
 		this.g = 143;
 		this.b = 143;
 		this.a = 1;
 		this.strokeStyle = "rgba(255,255,255,0.25)";
 		this.lineWidth = 1;
-		this.tension = 0.5;
-		this.numSegments = 10;
+		this.tension = 0.8;
+		this.numSegments = 30;
 		this.closedLoop = true;
 		this.wiggle = 3;
 		this.wiggleChance = 0.5;

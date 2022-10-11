@@ -3,9 +3,9 @@ import Particle from "./Particle.js";
 class Gnat extends Particle {
 	constructor(x,y){
 		super(x,y);
-		this.r = 50;
-		this.g = 50;
-		this.b = 50;
+		this.r = 150;
+		this.g = 150;
+		this.b = 150;
 		this.a = 1;
 		this.radius = 2;
 		this.maxAngleJitter = 0.3;

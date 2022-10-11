@@ -7,7 +7,8 @@ class Confetti extends Particle {
 		x += Math.random() * xScatter * 2 - xScatter;
 		y += Math.random() * yScatter * 2 - yScatter;
 		super(x, y);
-		this.color = "#" + Math.floor(Math.random() * 0xffffff);
+		const hue = Math.floor(Math.random() * 360);
+		this.color = `hsl(${hue}deg, 100%, 90%)`;
 		this.size = 10;
 		this.horizSpeed = 10;
 		this.vertSpeed = 2;
