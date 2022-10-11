@@ -23,12 +23,11 @@ function addParticle(e) {
     const id = canvas.id;
     const x = (e.x ?? e.touches[0].x) - rect.x;
     const y = (e.y ?? e.touches[0].y) - rect.y;
-    const system = particleSystem[id];
-    const {spawnChance, spawnQuantity} = system.particle;
-    if (Math.random() < spawnChance) {
-        const engine = system.engine;
+    const {engine, particle} = particleSystem[id];
+    const {spawnChance, spawnQuantity} = particle;
+    if (!engine.particles.length || Math.random() < spawnChance) {
         for (let i=0; i<spawnQuantity; i++) {
-            const p = new system.particle(x, y);
+            const p = new particle(x, y);
             engine.addParticle(p);
         }
         engine.startAnimation();

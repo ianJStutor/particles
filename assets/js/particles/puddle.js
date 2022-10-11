@@ -2,7 +2,7 @@ import Particle from "./Particle.js";
 
 class Puddle extends Particle {
 
-	static spawnChance = 0.02;
+	static spawnChance = 0.03;
 
 	constructor(x, y){
 		super(x, y);
