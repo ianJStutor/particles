@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Heart extends Particle {
+
+	static spawnChance = 0.2;
+
 	constructor(x,y){
 		var xScatter = 10;
 		x += Math.random() * xScatter * 2 - xScatter;

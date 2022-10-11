@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Blob extends Particle {
+
+	static spawnChance = 0.025;
+
 	constructor(x,y){
 		super(x,y);
 		const numPoints = 5;
@@ -29,9 +32,9 @@ class Blob extends Particle {
 		this.tension = 0.8;
 		this.numSegments = 30;
 		this.closedLoop = true;
-		this.wiggle = 3;
+		this.wiggle = 1;
 		this.wiggleChance = 0.5;
-		this.life = 100;
+		this.life = 150;
 	}
 	update(canvas){
 		this.x += this.vx;

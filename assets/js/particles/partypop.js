@@ -2,7 +2,7 @@ import Particle from "./Particle.js";
 
 class PartyPop extends Particle {
 
-	static spawnChance = 0.1;
+	static spawnChance = 0.05;
 	static spawnQuantity = 50;
 
 	constructor(x, y){

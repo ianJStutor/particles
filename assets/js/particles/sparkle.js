@@ -2,6 +2,8 @@ import Particle from "./Particle.js";
 
 class Sparkle extends Particle {
 
+	static spawnQuantity = 30;
+
 	constructor(x, y){
 		super(x, y);
 		var minScatter = 2,

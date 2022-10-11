@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Drip extends Particle {
+
+	static spawnChance = 0.05;
+
 	constructor(x, y){
     	super(x, y);
       	this.originX = x;
@@ -53,6 +56,7 @@ class Drip extends Particle {
   	isAlive(canvas){
     	return --this.life >= 0;
     }
+
 }
 
 export default Drip;

@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Puddle extends Particle {
+
+	static spawnChance = 0.02;
+
 	constructor(x, y){
 		super(x, y);
 		this.r = 200;

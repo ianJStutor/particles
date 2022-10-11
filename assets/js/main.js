@@ -1,11 +1,7 @@
 import ParticleEngine from "./particle-engine.js";
 import * as particles from "./particles/loader.js";
 
-// const blob = new particles.Blob();
-// console.log(blob);
-
 const canvases = document.querySelectorAll("canvas");
-
 const particleSystem = {};
 
 for (let c of canvases) {
@@ -28,9 +24,10 @@ function addParticle(e) {
     const x = (e.x ?? e.touches[0].x) - rect.x;
     const y = (e.y ?? e.touches[0].y) - rect.y;
     const system = particleSystem[id];
-    if (Math.random() < system.particle.spawnChance) {
+    const {spawnChance, spawnQuantity} = system.particle;
+    if (Math.random() < spawnChance) {
         const engine = system.engine;
-        for (let i=0; i<system.particle.spawnQuantity; i++) {
+        for (let i=0; i<spawnQuantity; i++) {
             const p = new system.particle(x, y);
             engine.addParticle(p);
         }
