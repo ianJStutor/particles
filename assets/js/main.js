@@ -1,5 +1,5 @@
 import ParticleEngine from "./particle-engine.js";
-import * as particles from "./particles/_loader.js";
+import * as particles from "./particles/loader.js";
 
 // const blob = new particles.Blob();
 // console.log(blob);
