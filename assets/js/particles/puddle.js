@@ -2,7 +2,7 @@ import Particle from "./Particle.js";
 
 class Puddle extends Particle {
 
-	static name = "Puddles";
+	static displayName = "Puddles";
 	static spawnChance = 0.03;
 
 	constructor(x, y){

@@ -7,6 +7,7 @@ import Heart from "./heart.js";
 import PartyPop from "./partypop.js";
 import Puck from "./puck.js";
 import Puddle from "./puddle.js";
+import Smoke from "./smoke.js";
 import Sparkle from "./sparkle.js";
 import Zap from "./zap.js";
 
@@ -20,6 +21,7 @@ export {
     PartyPop,
     Puck,
     Puddle,
+    Smoke,
     Sparkle,
     Zap
 };

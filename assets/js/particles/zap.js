@@ -2,7 +2,8 @@ import Particle from "./Particle.js";
 
 class Zap extends Particle {
 
-	static name = "Zaps";
+	static displayName = "Zaps";
+	static spawnQuantity = 10;
 
 	constructor(x, y){
 		super(x, y);

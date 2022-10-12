@@ -2,7 +2,7 @@ import Particle from "./Particle.js";
 
 class Puck extends Particle {
 
-	static name = "Pucks";
+	static displayName = "Pucks";
 
 	constructor(x, y){
 		super(x, y);

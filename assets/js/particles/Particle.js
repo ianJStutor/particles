@@ -11,7 +11,6 @@ class Particle {
 
 	static spawnQuantity = 1;
 	static spawnChance = 1;
-	static name = "Particles";
 }
 
 export default Particle;

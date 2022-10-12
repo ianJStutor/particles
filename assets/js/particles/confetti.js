@@ -1,6 +1,7 @@
 import Particle from "./Particle.js";
 
 class Confetti extends Particle {
+
 	constructor(x, y){
 		var xScatter = 10,
 			yScatter = 5;

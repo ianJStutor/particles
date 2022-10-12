@@ -2,7 +2,7 @@ import Particle from "./Particle.js";
 
 class Blob extends Particle {
 
-	static name = "Blobs";
+	static displayName = "Blobs";
 	static spawnChance = 0.04;
 
 	constructor(x,y){
