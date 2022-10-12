@@ -2,6 +2,7 @@ import Particle from "./Particle.js";
 
 class Drip extends Particle {
 
+	static name = "Drips";
 	static spawnChance = 0.05;
 
 	constructor(x, y){

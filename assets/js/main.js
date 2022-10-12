@@ -9,7 +9,7 @@ for (let c of canvases) {
     particleSystem[id] = {
         canvas: c,
         particle: particles[id],
-        engine: new ParticleEngine(c)
+        engine: new ParticleEngine(c, particles[id].name)
     };
     c.width = c.height = 300;
     c.addEventListener("mousemove", addParticle);

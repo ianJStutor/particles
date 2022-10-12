@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Zap extends Particle {
+
+	static name = "Zaps";
+
 	constructor(x, y){
 		super(x, y);
 		this.r = Math.floor(Math.random()*50)+205;

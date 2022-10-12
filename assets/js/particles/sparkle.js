@@ -2,6 +2,7 @@ import Particle from "./Particle.js";
 
 class Sparkle extends Particle {
 
+	static name = "Sparkles";
 	static spawnQuantity = 30;
 
 	constructor(x, y){

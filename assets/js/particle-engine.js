@@ -1,8 +1,9 @@
 //class ParticleEngine
 
 class ParticleEngine {
-	constructor(canvas){
+	constructor(canvas, name){
       	this.canvas = canvas;
+		this.name = name;
       	this.ctx = canvas.getContext("2d");
     	this.particles = [];
       	this.isAnimating = false;
@@ -42,6 +43,12 @@ class ParticleEngine {
             	this.particles.splice(i, 1); //remove 1 particle at index i
             }
         }
+		//draw name on canvas
+		if (this.particles.length) {
+			this.ctx.font = "24px sans-serif";
+			this.ctx.fillStyle = "white";
+			this.ctx.fillText(this.name, 10, this.ctx.canvas.height - 10);
+		}
       	//are there any more particles?
       	if (!this.particles.length){
 			this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);

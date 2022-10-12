@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Gnat extends Particle {
+
+	static name = "Gnats";
+
 	constructor(x,y){
 		super(x,y);
 		this.r = 150;

@@ -1,6 +1,9 @@
 import Particle from "./Particle.js";
 
 class Fairy extends Particle {
+
+	static name = "Fairies";
+
 	constructor(x, y){
 		super(x, y);
 		this.life = 100;
