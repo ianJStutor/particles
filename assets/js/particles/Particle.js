@@ -11,6 +11,7 @@ class Particle {
 
 	static spawnQuantity = 1;
 	static spawnChance = 1;
+	static spawnMaxMS = 1500; //max milliseconds between spawns, despite spawnChance
 }
 
 export default Particle;

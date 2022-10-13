@@ -9,7 +9,8 @@ for (let c of canvases) {
     particleSystem[id] = {
         canvas: c,
         particle: particles[id],
-        engine: new ParticleEngine(c, particles[id].displayName ?? particles[id].name)
+        engine: new ParticleEngine(c, particles[id].displayName ?? particles[id].name),
+        lastSpawn: Date.now()
     };
     c.width = c.height = 300;
     c.addEventListener("mousemove", addParticle);
@@ -23,13 +24,15 @@ function addParticle(e) {
     const id = canvas.id;
     const x = (e.x ?? e.touches[0].x) - rect.x;
     const y = (e.y ?? e.touches[0].y) - rect.y;
-    const {engine, particle} = particleSystem[id];
-    const {spawnChance, spawnQuantity} = particle;
-    if (!engine.particles.length || Math.random() < spawnChance) {
+    const {engine, particle, lastSpawn} = particleSystem[id];
+    const {spawnChance, spawnQuantity, spawnMaxMS} = particle;
+    const now = Date.now();
+    if (now - lastSpawn > spawnMaxMS || Math.random() < spawnChance) {
         for (let i=0; i<spawnQuantity; i++) {
             const p = new particle(x, y);
             engine.addParticle(p);
         }
+        particleSystem[id].lastSpawn = now;
         engine.startAnimation();
     }
 }
