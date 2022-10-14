@@ -4,6 +4,7 @@ import Drip from "./drip.js";
 import Fairy from "./fairy.js";
 import Gnat from "./gnat.js";
 import Heart from "./heart.js";
+import Hex from "./hex.js";
 import PartyPop from "./partypop.js";
 import Puck from "./puck.js";
 import Puddle from "./puddle.js";
@@ -18,6 +19,7 @@ export {
     Fairy,
     Gnat,
     Heart,
+    Hex,
     PartyPop,
     Puck,
     Puddle,
