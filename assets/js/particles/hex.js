@@ -15,9 +15,9 @@ class Hex extends Particle {
 		this.tail = [];
 		this.lineWidth = 2;
 		this.angle = Math.floor(Math.random() * 6) * (Math.PI/3);
-		this.hexLength = 30;
+		this.hexLength = 30; //should be a multiple of speed for best results
+		this.speed = 10; //should be a factor of hexLength for best results
 		this.lastTurn = {x, y};
-		this.speed = 10;
 	}
 	update(canvas){
 		this.tail.unshift({x: this.x, y: this.y});
