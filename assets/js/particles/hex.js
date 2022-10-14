@@ -7,7 +7,7 @@ class Hex extends Particle {
 
 	constructor(x, y){
 		super(x, y);
-		this.hue = 51;
+		this.hue = 86;
 		this.sat = 100;
 		this.lit = 100;
 		this.deltaLit = -1;
@@ -36,7 +36,7 @@ class Hex extends Particle {
 		for (let i=0; i<this.tail.length-1; i++) {
 			let p = this.tail[i];
 			let p1 = this.tail[i+1];
-			ctx.strokeStyle = `hsl(${this.hue}deg, 100%, ${Math.max(0, this.lit-i)}%)`;
+			ctx.strokeStyle = `hsl(${this.hue}deg, ${this.sat}%, ${Math.max(0, this.lit-i)}%)`;
 			ctx.lineWidth = this.lineWidth;
 			ctx.beginPath();
 			ctx.moveTo(p.x, p.y);
