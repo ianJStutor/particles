@@ -2,6 +2,7 @@ import Blob from "./blob.js";
 import Confetti from "./confetti.js";
 import Drip from "./drip.js";
 import Fairy from "./fairy.js";
+import Foam from "./foam.js";
 import Gnat from "./gnat.js";
 import Heart from "./heart.js";
 import Hex from "./hex.js";
@@ -17,6 +18,7 @@ export {
     Confetti,
     Drip,
     Fairy,
+    Foam,
     Gnat,
     Heart,
     Hex,
