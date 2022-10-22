@@ -1,4 +1,5 @@
 import Blob from "./blob.js";
+import Bubble from "./bubble.js";
 import Confetti from "./confetti.js";
 import Drip from "./drip.js";
 import Fairy from "./fairy.js";
@@ -16,6 +17,7 @@ import Zap from "./zap.js";
 
 export {
     Blob,
+    Bubble,
     Confetti,
     Drip,
     Fairy,
