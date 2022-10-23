@@ -3,7 +3,7 @@ import Particle from "./Particle.js";
 class Drip extends Particle {
 
 	static displayName = "Drips";
-	static spawnChance = 0.05;
+	static spawnChance = 0.1;
 
 	constructor(x, y){
     	super(x, y);
