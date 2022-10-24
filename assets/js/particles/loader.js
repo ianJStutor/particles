@@ -13,6 +13,7 @@ import Puck from "./puck.js";
 import Puddle from "./puddle.js";
 import Smoke from "./smoke.js";
 import Sparkle from "./sparkle.js";
+import Vortex from "./vortex.js";
 import Zap from "./zap.js";
 
 export {
@@ -31,5 +32,6 @@ export {
     Puddle,
     Smoke,
     Sparkle,
+    Vortex,
     Zap
 };
