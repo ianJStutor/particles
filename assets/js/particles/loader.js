@@ -1,3 +1,4 @@
+import Bar from "./bar.js";
 import Blob from "./blob.js";
 import Bubble from "./bubble.js";
 import Confetti from "./confetti.js";
@@ -17,6 +18,7 @@ import Vortex from "./vortex.js";
 import Zap from "./zap.js";
 
 export {
+    Bar,
     Blob,
     Bubble,
     Confetti,
