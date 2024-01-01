@@ -1,4 +1,4 @@
-//interface Particle
+//<interface> Particle
 
 class Particle {
 	constructor(x, y){
