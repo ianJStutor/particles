@@ -1,5 +1,3 @@
-//class ParticleEngine
-
 class ParticleEngine {
 	constructor(canvas, name){
       	this.canvas = canvas;
